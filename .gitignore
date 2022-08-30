@@ -5,6 +5,7 @@ node_modules
 
 # outputs
 dist
+playwright-report
 
 # testing
 coverage
