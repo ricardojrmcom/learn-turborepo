@@ -30,20 +30,20 @@ jobs:
       - name: Install Deps
         run: yarn install
 
-      - name: Run Dry Build
-        run: yarn build
-
       - name: Run Lint
         run: yarn lint
 
-      # - name: Run Unit Tests
-      #   run: yarn test
+      - name: Run Prettier
+        run: yarn format
 
-      # - name: Run e2e Tests
-      #   uses: cypress-io/github-action@v2
-      #   with:
-      #     build: yarn build
-      #     start: yarn start
+      - name: Run Build
+        run: yarn build
+
+      - name: Install Browsers
+        run: yarn test-install
+
+      - name: Run tests
+        run: yarn test
 
   release:
     name: Release Package

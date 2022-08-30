@@ -11,11 +11,15 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "npx playwright test",
+    "test-install": "npx playwright install --with-deps",
+    "test-report": "npx playwright show-report",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@playwright/test": "^1.25.1",
     "eslint-config-custom": "*",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
