@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "tsc",
-    "lint": "eslint *.ts*"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "eslint": "^7.32.0",
